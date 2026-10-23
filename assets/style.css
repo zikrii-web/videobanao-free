@@ -207,3 +207,24 @@ footer p{color:var(--mut);font-size:.9rem}
 .featlist{list-style:none;padding:0}
 .featlist li{color:var(--mut);padding:5px 0 5px 26px;position:relative;margin:0}
 .featlist li::before{content:"✓";position:absolute;left:2px;color:var(--ok);font-weight:800}
+
+/* ===== v2 directory: stretched official link, caps tags, free line, category grid ===== */
+.tool-card{position:relative}
+.tc-hit{position:absolute;inset:0;z-index:1;border-radius:var(--r)}
+.tc-det{position:relative;z-index:2}
+.tc-tags{display:flex;flex-wrap:wrap;gap:5px}
+.tc-tags .tag{font-size:.7rem;font-weight:700;letter-spacing:.02em;background:var(--bg2);border:1px solid var(--line);color:var(--mut);border-radius:999px;padding:2px 8px}
+.tc-free{font-size:.8rem;color:var(--mut2)}
+.tc-free b{color:var(--ok);font-weight:700}
+.tc-row{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.sec-head a{font-weight:700;font-size:.92rem}
+.catgrid{display:grid;grid-template-columns:1fr;gap:12px;margin-top:16px}
+@media(min-width:640px){.catgrid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.catgrid{grid-template-columns:repeat(3,1fr)}}
+.catcard{display:block;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px;transition:transform .12s,border-color .12s;color:var(--txt)}
+.catcard:hover{transform:translateY(-3px);border-color:var(--acc)}
+.catcard h3{font-size:1.02rem;margin-bottom:4px}
+.catcard p{color:var(--mut);font-size:.88rem;margin:0}
+.catcard .ccount{display:inline-block;margin-top:9px;font-size:.76rem;font-weight:800;color:var(--acc2);text-transform:uppercase;letter-spacing:.04em}
+.newflag{font-size:.68rem;font-weight:800;color:#0b0e17;background:var(--ok);border-radius:6px;padding:1px 6px;margin-left:6px;vertical-align:2px}
