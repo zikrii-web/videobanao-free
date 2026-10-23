@@ -145,3 +145,65 @@ footer h4{margin-bottom:9px;font-size:.95rem}
 footer a{display:block;color:var(--mut);padding:3px 0;font-size:.92rem}
 footer p{color:var(--mut);font-size:.9rem}
 .copy{margin-top:20px;color:var(--mut2);font-size:.82rem;text-align:center}
+
+/* logo lockup + platform chips */
+.logo span{display:inline-flex;align-items:center;gap:8px}
+.logo small{background:var(--grad);color:#fff;border-radius:6px;padding:2px 7px;font-size:.66rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
+.nosign-line{margin-top:14px;font-weight:700;color:var(--txt);font-size:1rem}
+.pfor{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center;margin-top:14px}
+.pfor .pfor-label{font-size:.85rem;font-weight:700;color:var(--mut);margin-right:2px}
+.pchip{display:inline-flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 13px 5px 6px;font-size:.86rem;font-weight:600;color:var(--txt)}
+.pchip img{width:22px;height:22px;background:#fff;border-radius:6px;padding:3px}
+.pfor.mini{margin-top:12px}
+.pfor.mini .pchip{font-size:.8rem;padding:4px 11px 4px 5px}
+.pfor.mini .pchip img{width:19px;height:19px}
+.prose .pfor{justify-content:flex-start;margin:14px 0 6px}
+
+/* ===== AI tools directory ===== */
+.dirbar{max-width:640px;margin:18px auto 4px;display:flex;gap:8px}
+.dirbar input{flex:1;background:var(--card);border:1.5px solid var(--line);border-radius:999px;padding:13px 20px;font-size:1rem;color:var(--txt)}
+.dirbar input:focus{border-color:var(--acc);outline:none}
+.dcount{text-align:center;color:var(--mut);font-size:.9rem;font-weight:600;margin-top:10px}
+.chips{display:flex;gap:7px;flex-wrap:wrap;justify-content:center;margin-top:14px}
+.chips .clab{font-size:.82rem;font-weight:700;color:var(--mut2);text-transform:uppercase;letter-spacing:.05em;align-self:center;margin-right:2px}
+.fchip{background:var(--card);border:1px solid var(--line);color:var(--mut);border-radius:999px;padding:7px 14px;font:inherit;font-size:.86rem;font-weight:600;cursor:pointer}
+.fchip:hover{border-color:var(--acc);color:var(--txt)}
+.fchip.on{background:var(--grad);color:#fff;border-color:transparent}
+.tgrid2{display:grid;grid-template-columns:1fr;gap:12px;margin-top:20px}
+@media(min-width:640px){.tgrid2{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.tgrid2{grid-template-columns:repeat(3,1fr)}}
+.tool-card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:9px;transition:transform .12s,border-color .12s}
+.tool-card:hover{transform:translateY(-3px);border-color:var(--acc)}
+.tool-card.featured{border:2px solid var(--acc);background:linear-gradient(160deg,var(--card),var(--card2))}
+.tc-top{display:flex;gap:12px;align-items:center}
+.tlogo{flex:0 0 auto;width:52px;height:52px;border-radius:13px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.tlogo img{width:36px;height:36px;object-fit:contain}
+.tlogo .lt{font-weight:800;font-size:1.35rem;color:#fff;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:var(--grad)}
+.tc-name{font-size:1.06rem;font-weight:700;line-height:1.25}
+.tc-cat{color:var(--mut2);font-size:.8rem;font-weight:600}
+.stars{color:#ffb020;font-size:.92rem;letter-spacing:1px}
+.stars b{color:var(--txt)}
+.pbadge{align-self:flex-start;font-size:.74rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:3px 10px}
+.pbadge.free{background:rgba(46,204,113,.16);color:#2ecc71;border:1px solid rgba(46,204,113,.45)}
+.pbadge.freemium{background:rgba(255,176,32,.14);color:#ffb020;border:1px solid rgba(255,176,32,.45)}
+.pbadge.paid{background:rgba(124,92,255,.16);color:#a58cff;border:1px solid rgba(124,92,255,.5)}
+.tc-desc{color:var(--mut);font-size:.92rem;flex:1}
+.tc-best{font-size:.82rem;color:var(--acc2);font-weight:600}
+.tc-btns{display:flex;gap:8px;margin-top:2px}
+.tc-btns .btn{flex:1}
+.noresults{text-align:center;color:var(--mut);padding:36px 0;font-weight:600}
+.loadwrap{text-align:center;padding:22px 0 6px}
+/* tool detail page */
+.crumb{font-size:.86rem;color:var(--mut2);margin:18px 0 4px;font-weight:600}
+.crumb a{color:var(--mut)}
+.tool-hero{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin:10px 0 6px}
+.tool-hero .tlogo{width:76px;height:76px;border-radius:18px}
+.tool-hero .tlogo img{width:52px;height:52px}
+.tool-hero .tlogo .lt{font-size:2rem}
+.tool-hero h1{font-size:1.8rem}
+.factbox{background:var(--bg2);border:1px solid var(--line);border-left:4px solid var(--ok);border-radius:12px;padding:14px 16px;margin:14px 0}
+.factbox h3{font-size:.95rem;margin-bottom:4px;color:var(--ok)}
+.factbox p{color:var(--mut);margin:0}
+.featlist{list-style:none;padding:0}
+.featlist li{color:var(--mut);padding:5px 0 5px 26px;position:relative;margin:0}
+.featlist li::before{content:"✓";position:absolute;left:2px;color:var(--ok);font-weight:800}
