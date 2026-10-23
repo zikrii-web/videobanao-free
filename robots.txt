@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://videobanao-free.netlify.app/sitemap.xml
